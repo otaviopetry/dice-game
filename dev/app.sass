@@ -1,0 +1,166 @@
+$darkColor: #5B6057
+$middleColor: #78C091
+$lightColor: #81F0E5
+$shade: #6E9075
+
+    
+body, html
+    margin: 0
+    font-family: 'Roboto Mono', monospace
+    overflow: hidden
+
+.load-all-images
+    display: none
+
+
+.main.row, .dices, .button.row, .score.row, .player
+    opacity: 1
+    visibility: visible
+    transition: visibility 0s, opacity ease-out 1.2s
+
+button
+    padding: 10px 20px
+        font-size: 1.5rem
+    text-transform: lowercase
+    background-color: #fff
+    color: $darkColor
+    
+#op-dicee-challenge
+    background-color: $darkColor
+
+    .disabled
+        visibility: hidden
+        opacity: 0
+        width: 0
+        height: 0
+
+    .container
+        width: 100vw
+        min-height: 100vh
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+
+    .welcome-players
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        text-align: center
+        width: 100%
+        color: #fff
+
+        h2
+            margin-bottom: 0
+
+        .explanation
+            padding: 0 1rem
+            margin-bottom: 2rem
+
+        .namesInputs
+            margin-bottom: 2rem
+
+            .input-group
+                margin-bottom: 1rem
+            
+            label
+                font-weight: 700
+                font-size: .9rem
+
+            input
+                border-radius: 5px
+                border-color: #9a9a9a
+                color: #555
+                padding: 5px
+        
+        .error
+            font-size: .9rem
+        
+        button
+            margin-bottom: 1rem
+
+        
+    
+    header
+        h1
+            color: $lightColor
+            margin-bottom: 1rem
+        
+        text-align: center
+
+    .row
+        width: 100%
+        display: flex
+        flex-direction: row
+    
+    .main.row
+        margin-bottom: 3rem
+        align-items: center
+        justify-content: center
+        visibility: visible
+        opacity: 1
+
+    .button.row
+        justify-content: center
+    
+    .score.row
+        text-align: center
+        justify-content: center
+        align-items: center
+        flex-direction: column-reverse
+
+    .player
+        width: 20%
+        padding: 1rem
+        text-align: center
+        color: #fff
+    
+    .dices
+        width: 35%
+        display: flex
+
+        .dice
+            padding: 1rem
+            width: 50%
+            text-align: center
+            opacity: 0.7
+            border: 2px solid #fff
+            color: #fff
+
+            figure
+                max-width: 80%
+                margin: 0 auto
+
+                img
+                    width: 140px
+                    height: auto
+                    max-width: 100%
+
+        .dice1
+            border-right-width: 1px            
+                    
+        .dice2
+            border-left-width: 1px
+    
+
+    .keep-score
+        overflow-y: scroll
+        height: 140px
+        max-height: 140px
+        width: 80%
+        background-color: #fff
+        color: $darkColor
+        padding: 15px
+        opacity: 0.5
+        margin-top: 3rem
+
+        .outputs
+            padding-bottom: 10px
+
+            
+
+
+
+
+

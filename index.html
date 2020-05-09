@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet"> 
+
+
+    <title>Joguin de dados</title>
+    
+</head>
+<body>
+
+    <div class="load-all-images">
+        <img src="img/1.svg" alt="Número 1">
+        <img src="img/2.svg" alt="Número 2">
+        <img src="img/3.svg" alt="Número 3">
+        <img src="img/4.svg" alt="Número 4">
+        <img src="img/5.svg" alt="Número 5">
+        <img src="img/6.svg" alt="Número 6">
+    </div>
+
+    <section id="op-dicee-challenge">
+            
+        <div class="container">
+
+            <header>
+                <h1>Joguin de dados</h1>
+            </header>
+
+            <div class="row welcome">
+                <div class="welcome-players">
+                    
+                    <h2>Olá, meu/minha jovem.</h2>
+                    
+                    <p class="explanation">Informa o nome dos viventes e clica em jogar</p>
+                    <div class="namesInputs">
+                        <div class="input-group">
+                            <label for="player1">Vivente 1</label>
+                            <input type="text" id="player1" name="player1">
+                        </div>
+                        <div class="input-group">
+                            <label for="player2">Vivente 2</label>
+                            <input type="text" id="player2" name="player2">
+                        </div>
+                    </div>
+                    <button id="startGame">Jogar</button>
+                    <div class="error"></div>
+
+                    
+                </div>
+            </div>
+            
+
+            <div class="row main disabled">
+                <div class="player1Name player disabled"></div>
+
+                <div class="dices disabled">
+                    <div class="dice1 dice">
+                        <figure>
+                            <img src="img/6.svg" alt="Número 6">
+                        </figure>
+                    </div>
+                    <div class="dice2 dice">
+                        <figure>
+                            <img src="img/6.svg" alt="Número 6">
+                        </figure>
+                    </div>
+                </div>
+
+                <div class="player2Name player disabled"></div>
+            </div>
+
+            <div class="row button disabled">
+                <button id="rollTheDice">Rodar os dados</button>
+            </div>
+
+            <div class="row score disabled">
+                <div class="keep-score">
+                    <h2>Resultados</h2>
+                    <div class="outputs">
+                        <div class="round"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    
+
+    <script type="text/javascript" src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,156 @@
+body, html {
+  margin: 0;
+  font-family: "Roboto Mono", monospace;
+  overflow: hidden;
+}
+
+.load-all-images {
+  display: none;
+}
+
+.main.row, .dices, .button.row, .score.row, .player {
+  opacity: 1;
+  visibility: visible;
+  transition: visibility 0s, opacity ease-out 1.2s;
+}
+
+button {
+  padding: 10px 20px;
+  padding-font-size: 1.5rem;
+  text-transform: lowercase;
+  background-color: #fff;
+  color: #5B6057;
+}
+
+#op-dicee-challenge {
+  background-color: #5B6057;
+}
+#op-dicee-challenge .disabled {
+  visibility: hidden;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+#op-dicee-challenge .container {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#op-dicee-challenge .welcome-players {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  color: #fff;
+}
+#op-dicee-challenge .welcome-players h2 {
+  margin-bottom: 0;
+}
+#op-dicee-challenge .welcome-players .explanation {
+  padding: 0 1rem;
+  margin-bottom: 2rem;
+}
+#op-dicee-challenge .welcome-players .namesInputs {
+  margin-bottom: 2rem;
+}
+#op-dicee-challenge .welcome-players .namesInputs .input-group {
+  margin-bottom: 1rem;
+}
+#op-dicee-challenge .welcome-players .namesInputs label {
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+#op-dicee-challenge .welcome-players .namesInputs input {
+  border-radius: 5px;
+  border-color: #9a9a9a;
+  color: #555;
+  padding: 5px;
+}
+#op-dicee-challenge .welcome-players .error {
+  font-size: 0.9rem;
+}
+#op-dicee-challenge .welcome-players button {
+  margin-bottom: 1rem;
+}
+#op-dicee-challenge header {
+  text-align: center;
+}
+#op-dicee-challenge header h1 {
+  color: #81F0E5;
+  margin-bottom: 1rem;
+}
+#op-dicee-challenge .row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+#op-dicee-challenge .main.row {
+  margin-bottom: 3rem;
+  align-items: center;
+  justify-content: center;
+  visibility: visible;
+  opacity: 1;
+}
+#op-dicee-challenge .button.row {
+  justify-content: center;
+}
+#op-dicee-challenge .score.row {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column-reverse;
+}
+#op-dicee-challenge .player {
+  width: 20%;
+  padding: 1rem;
+  text-align: center;
+  color: #fff;
+}
+#op-dicee-challenge .dices {
+  width: 35%;
+  display: flex;
+}
+#op-dicee-challenge .dices .dice {
+  padding: 1rem;
+  width: 50%;
+  text-align: center;
+  opacity: 0.7;
+  border: 2px solid #fff;
+  color: #fff;
+}
+#op-dicee-challenge .dices .dice figure {
+  max-width: 80%;
+  margin: 0 auto;
+}
+#op-dicee-challenge .dices .dice figure img {
+  width: 140px;
+  height: auto;
+  max-width: 100%;
+}
+#op-dicee-challenge .dices .dice1 {
+  border-right-width: 1px;
+}
+#op-dicee-challenge .dices .dice2 {
+  border-left-width: 1px;
+}
+#op-dicee-challenge .keep-score {
+  overflow-y: scroll;
+  height: 140px;
+  max-height: 140px;
+  width: 80%;
+  background-color: #fff;
+  color: #5B6057;
+  padding: 15px;
+  opacity: 0.5;
+  margin-top: 3rem;
+}
+#op-dicee-challenge .keep-score .outputs {
+  padding-bottom: 10px;
+}
+
+/*# sourceMappingURL=app.css.map */
