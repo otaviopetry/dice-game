@@ -13,7 +13,7 @@ body, html
     display: none
 
 
-.main.row, .dices, .button.row, .score.row, .player
+.main.row, .dices, .button.row, .score.row, .player, .welcome.row, .reset.row
     opacity: 1
     visibility: visible
     transition: visibility 0s, opacity ease-out 1.2s
@@ -33,6 +33,7 @@ button
         opacity: 0
         width: 0
         height: 0
+        transition: visibility 0s, opacity ease-out 1.2s
 
     .container
         width: 100vw
@@ -53,6 +54,7 @@ button
 
         h2
             margin-bottom: 0
+            font-size: 2rem
 
         .explanation
             padding: 0 1rem
@@ -86,6 +88,8 @@ button
         h1
             color: $lightColor
             margin-bottom: 1rem
+            font-size: 1.1rem
+            letter-spacing: -1px
         
         text-align: center
 
@@ -104,11 +108,23 @@ button
     .button.row
         justify-content: center
     
+    #rollTheDice
+        font-size: 1.3rem
+    
     .score.row
         text-align: center
         justify-content: center
         align-items: center
         flex-direction: column
+    
+    .reset.row
+        justify-content: center
+        align-items: center
+
+        button
+            background-color: $darkColor
+            border: 2px solid #fff
+            color: #fff
 
     .player
         display: flex
@@ -162,6 +178,7 @@ button
         padding: 15px
         opacity: 0.5
         margin-top: 3rem
+        margin-bottom: 1.5rem
 
         .outputs
             padding-bottom: 10px

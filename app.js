@@ -7,6 +7,9 @@ var dice1 = document.querySelector(".dice1");
 var dice2 = document.querySelector(".dice2");
 var rollTheDice = document.getElementById("rollTheDice");
 
+var disabledElements = document.querySelectorAll(".disabled");
+var resetButton = document.getElementById("resetGame");
+
 var output1 = '<figure><img src="img/1.svg" alt="Número 1"></figure>';
 var output2 = '<figure><img src="img/2.svg" alt="Número 2"></figure>';
 var output3 = '<figure><img src="img/3.svg" alt="Número 3"></figure>';
@@ -47,7 +50,7 @@ playButton.addEventListener("click", function () {
 
         count = 1;
     } else {
-        document.querySelector(".welcome-players .error").innerHTML = "Informa os nomes, tchê!";
+        document.querySelector(".welcome-players .error").innerHTML = "Informa os nomes, jovem!";
     }
         
 })
@@ -85,3 +88,20 @@ function diceLoop (result, dice) {
     dice.innerHTML = outputsArray[result-1];
 
 }
+
+resetButton.addEventListener("click", function () {
+
+    setTimeout( function () {
+        disabledElements.forEach( (element) => {
+            element.classList.add("disabled");
+        })
+        count = 0;
+        player1Score = 0;
+        player2Score = 0;
+        welcomeScreen.classList.remove("disabled");
+        
+        document.querySelector("#player1").value = "";
+        document.querySelector("#player2").value = "";
+    }, 100)        
+    
+})

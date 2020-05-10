@@ -8,7 +8,7 @@ body, html {
   display: none;
 }
 
-.main.row, .dices, .button.row, .score.row, .player {
+.main.row, .dices, .button.row, .score.row, .player, .welcome.row, .reset.row {
   opacity: 1;
   visibility: visible;
   transition: visibility 0s, opacity ease-out 1.2s;
@@ -30,6 +30,7 @@ button {
   opacity: 0;
   width: 0;
   height: 0;
+  transition: visibility 0s, opacity ease-out 1.2s;
 }
 #op-dicee-challenge .container {
   width: 100vw;
@@ -50,6 +51,7 @@ button {
 }
 #op-dicee-challenge .welcome-players h2 {
   margin-bottom: 0;
+  font-size: 2rem;
 }
 #op-dicee-challenge .welcome-players .explanation {
   padding: 0 1rem;
@@ -83,6 +85,8 @@ button {
 #op-dicee-challenge header h1 {
   color: #81F0E5;
   margin-bottom: 1rem;
+  font-size: 1.1rem;
+  letter-spacing: -1px;
 }
 #op-dicee-challenge .row {
   width: 100%;
@@ -99,11 +103,23 @@ button {
 #op-dicee-challenge .button.row {
   justify-content: center;
 }
+#op-dicee-challenge #rollTheDice {
+  font-size: 1.3rem;
+}
 #op-dicee-challenge .score.row {
   text-align: center;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+#op-dicee-challenge .reset.row {
+  justify-content: center;
+  align-items: center;
+}
+#op-dicee-challenge .reset.row button {
+  background-color: #5B6057;
+  border: 2px solid #fff;
+  color: #fff;
 }
 #op-dicee-challenge .player {
   display: flex;
@@ -158,6 +174,7 @@ button {
   padding: 15px;
   opacity: 0.5;
   margin-top: 3rem;
+  margin-bottom: 1.5rem;
 }
 #op-dicee-challenge .keep-score .outputs {
   padding-bottom: 10px;
