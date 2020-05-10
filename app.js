@@ -18,6 +18,10 @@ var outputsArray = [output1, output2, output3, output4, output5, output6];
 var keepScore = document.querySelector(".keep-score .outputs");
 var scoreHistory = [];
 var winner = "";
+var player1ScoreDisplay = document.querySelector(".player1Score");
+var player2ScoreDisplay = document.querySelector(".player2Score");
+var player1Score = 0;
+var player2Score = 0;
 
 var count = 0;
 
@@ -60,6 +64,15 @@ rollTheDice.addEventListener("click", function() {
     
     diceLoop(dice1Result, dice1);
     diceLoop(dice2Result, dice2);
+
+    if ( dice1Result > dice2Result ) {
+        player1Score++;
+    } else if ( dice1Result < dice2Result ) {
+        player2Score++;
+    }
+
+    player1ScoreDisplay.innerHTML = "Vitórias: " + player1Score;
+    player2ScoreDisplay.innerHTML = "Vitórias: " + player2Score;
 
     scoreHistory.push(turnOutput);
     lastRound.parentNode.insertBefore(turnOutput, lastRound);

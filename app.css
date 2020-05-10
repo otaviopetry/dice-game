@@ -103,13 +103,18 @@ button {
   text-align: center;
   justify-content: center;
   align-items: center;
-  flex-direction: column-reverse;
+  flex-direction: column;
 }
 #op-dicee-challenge .player {
+  display: flex;
+  flex-direction: column;
   width: 20%;
   padding: 1rem;
   text-align: center;
   color: #fff;
+}
+#op-dicee-challenge .player .score {
+  font-size: 0.8rem;
 }
 #op-dicee-challenge .dices {
   width: 35%;
@@ -122,6 +127,11 @@ button {
   opacity: 0.7;
   border: 2px solid #fff;
   color: #fff;
+}
+@media screen and (max-width: 568px) {
+  #op-dicee-challenge .dices .dice {
+    padding: 5px;
+  }
 }
 #op-dicee-challenge .dices .dice figure {
   max-width: 80%;
