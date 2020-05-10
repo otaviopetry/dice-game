@@ -98,6 +98,9 @@ resetButton.addEventListener("click", function () {
         count = 0;
         player1Score = 0;
         player2Score = 0;
+        player1ScoreDisplay.innerHTML = "Vitórias: 0";
+        player2ScoreDisplay.innerHTML = "Vitórias: 0";
+        keepScore.innerHTML = '<div class="round"></div>';
         welcomeScreen.classList.remove("disabled");
         
         document.querySelector("#player1").value = "";
