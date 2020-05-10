@@ -58,6 +58,7 @@ button {
   text-align: center;
   width: 100%;
   color: #fff;
+  padding-top: 50px;
 }
 #op-dicee-challenge .welcome-players h2 {
   margin-bottom: 0;
@@ -125,6 +126,7 @@ button {
   justify-content: center;
   visibility: visible;
   opacity: 1;
+  padding-top: 50px;
 }
 #op-dicee-challenge .button.row {
   justify-content: center;
@@ -207,6 +209,13 @@ button {
 }
 #op-dicee-challenge .keep-score .outputs {
   padding-bottom: 10px;
+}
+#op-dicee-challenge h2 {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+#op-dicee-challenge p.game-limit {
+  margin-top: 0;
 }
 #op-dicee-challenge .game-over {
   height: 100px;

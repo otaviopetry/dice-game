@@ -30,6 +30,8 @@ var player2ScoreDisplay = document.querySelector(".player2Score");
 var player1Score = 0;
 var player2Score = 0;
 
+var gameLimitDisplay = document.querySelector(".game-limit");
+
 var count = 0;
 
 var player1Name = "";
@@ -50,8 +52,10 @@ radioButtons.forEach( (btn) => {
     btn.addEventListener("click", function () {
         if ( this.value === "bo5" ) {
             gameLimit = 5;
+            gameLimitDisplay.innerHTML = "Melhor de 5";
         } else if ( this.value === "bo9" ) {
             gameLimit = 9;
+            gameLimitDisplay.innerHTML = "Melhor de 9";
         } else {
             gameLimit = -1;
         }
@@ -79,6 +83,14 @@ playButton.addEventListener("click", function () {
     }
         
 })
+
+if ( gameLimit === -1 ) {
+    gameLimitDisplay.innerHTML = "Modo infinito";
+} else if ( gameLimit === 5 ) {
+    gameLimitDisplay.innerHTML = "Melhor de 5";
+} else {
+    gameLimitDisplay.innerHTML = "Melhor de 9";
+}
 
 rollTheDice.addEventListener("click", function() {
 
