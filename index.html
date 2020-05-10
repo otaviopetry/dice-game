@@ -44,6 +44,21 @@
                             <label for="player2">Player 2</label>
                             <input type="text" id="player2" name="player2">
                         </div>
+                        <div class="input-group limit">
+                            
+                            <div>
+                            	<input type="radio" id="bestOf5" name="gameLimit" value="bo5">
+                            	<label for="bestOf5">Melhor de 5</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="bestOf9" name="gameLimit" value="bo9">
+                                <label for="bestOf9">Melhor de 9</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="infinite" name="gameLimit" value="infinite" checked>
+                                <label for="infinite">Infinitamente parça</label>
+                            </div>
+                        </div>
                             
                     </div>
                     <button id="startGame">Jogar</button>
@@ -53,14 +68,19 @@
                 </div>
             </div>
             
-
             <div class="row main disabled">
+                
                 <div class="player disabled">
                     <div class="player1Name playerName"></div>
                     <div class="player1Score score">Vitórias: 0</div>
                 </div>
 
+                <div class="game-over special-disabled">
+                    <h2>Game over!</h2>
+                </div>
+
                 <div class="dices disabled">
+                    
                     <div class="dice1 dice">
                         <figure>
                             <img src="img/6.svg" alt="Número 6">

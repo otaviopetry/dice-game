@@ -4,6 +4,10 @@ body, html {
   overflow: hidden;
 }
 
+.transparent {
+  opacity: 0.5;
+}
+
 .load-all-images {
   display: none;
 }
@@ -25,12 +29,17 @@ button {
 #op-dicee-challenge {
   background-color: #5B6057;
 }
-#op-dicee-challenge .disabled {
+#op-dicee-challenge div.disabled, #op-dicee-challenge div.special-disabled {
   visibility: hidden;
   opacity: 0;
   width: 0;
   height: 0;
   transition: visibility 0s, opacity ease-out 1.2s;
+  overflow: hidden;
+}
+#op-dicee-challenge div.disabled img, #op-dicee-challenge div.special-disabled img {
+  width: 0;
+  height: 0;
 }
 #op-dicee-challenge .container {
   width: 100vw;
@@ -39,6 +48,7 @@ button {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 #op-dicee-challenge .welcome-players {
   display: flex;
@@ -63,6 +73,17 @@ button {
 #op-dicee-challenge .welcome-players .namesInputs .input-group {
   margin-bottom: 1rem;
 }
+#op-dicee-challenge .welcome-players .namesInputs .input-group p.label {
+  font-size: 0.9rem;
+  margin-bottom: 0;
+  text-align: center;
+}
+#op-dicee-challenge .welcome-players .namesInputs .input-group.limit {
+  margin-top: 2rem;
+}
+#op-dicee-challenge .welcome-players .namesInputs .input-group.limit input {
+  margin-left: 1rem;
+}
 #op-dicee-challenge .welcome-players .namesInputs label {
   font-weight: 700;
   font-size: 0.9rem;
@@ -82,6 +103,8 @@ button {
 #op-dicee-challenge header {
   margin-bottom: 1rem;
   opacity: 0.8;
+  position: absolute;
+  top: 50px;
   text-align: center;
 }
 #op-dicee-challenge header h1 {
@@ -184,6 +207,20 @@ button {
 }
 #op-dicee-challenge .keep-score .outputs {
   padding-bottom: 10px;
+}
+#op-dicee-challenge .game-over {
+  height: 100px;
+  width: 35%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#op-dicee-challenge .game-over.special-disabled {
+  width: 0;
+}
+#op-dicee-challenge .game-over h2 {
+  text-align: center;
+  color: #fff;
 }
 
 /*# sourceMappingURL=app.css.map */
