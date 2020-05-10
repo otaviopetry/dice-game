@@ -96,6 +96,7 @@ resetButton.addEventListener("click", function () {
             element.classList.add("disabled");
         })
         count = 0;
+        scoreHistory = [];
         player1Score = 0;
         player2Score = 0;
         player1ScoreDisplay.innerHTML = "Vitórias: 0";

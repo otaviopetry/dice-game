@@ -80,13 +80,16 @@ button {
   margin-bottom: 1rem;
 }
 #op-dicee-challenge header {
+  margin-bottom: 1rem;
+  opacity: 0.8;
   text-align: center;
 }
 #op-dicee-challenge header h1 {
   color: #81F0E5;
-  margin-bottom: 1rem;
   font-size: 1.1rem;
   letter-spacing: -1px;
+  display: inline;
+  background-color: rgba(255, 255, 255, 0.9);
 }
 #op-dicee-challenge .row {
   width: 100%;
@@ -128,6 +131,9 @@ button {
   padding: 1rem;
   text-align: center;
   color: #fff;
+}
+#op-dicee-challenge .player .playerName {
+  font-weight: bold;
 }
 #op-dicee-challenge .player .score {
   font-size: 0.8rem;
