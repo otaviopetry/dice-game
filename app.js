@@ -56,8 +56,9 @@ radioButtons.forEach( (btn) => {
         } else if ( this.value === "bo9" ) {
             gameLimit = 9;
             gameLimitDisplay.innerHTML = "Melhor de 9";
-        } else {
+        } else if ( this.value === "infinite") {
             gameLimit = -1;
+            gameLimitDisplay.innerHTML = "Modo infinito";
         }
     })
 })
@@ -157,6 +158,7 @@ resetButton.addEventListener("click", function () {
         player2Score = 0;
         nonDrawRound = 0;
         gameLimit = -1;
+        gameLimitDisplay.innerHTML = "Modo infinito";
         player1ScoreDisplay.innerHTML = "Vitórias: 0";
         player2ScoreDisplay.innerHTML = "Vitórias: 0";
         keepScore.innerHTML = '<div class="round"></div>';
@@ -168,6 +170,7 @@ resetButton.addEventListener("click", function () {
         document.onload = document.getElementById("infinite").checked = true;
         rollTheDice.disabled = false;
         rollTheDice.classList.remove("transparent");
+        
     }, 100)        
     
 })
